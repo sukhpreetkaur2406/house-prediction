@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏠 Ultra-Advanced House Price Prediction</h1>
+
+    <div class="form">
+
+        <label>House Size (sq ft):</label>
+        <input type="number" id="size">
+
+        <label>Number of Rooms:</label>
+        <input type="number" id="rooms">
+
+        <label>Location Rating (1-10):</label>
+        <input type="number" id="location">
+
+        <label>House Age (years):</label>
+        <input type="number" id="age">
+
+        <label>Parking Available:</label>
+        <select id="parking">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Security Level (1-5):</label>
+        <input type="number" id="security">
+
+        <label>Lift Available:</label>
+        <select id="lift">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Garden Available:</label>
+        <select id="garden">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Swimming Pool:</label>
+        <select id="pool">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <button onclick="predictPrice()">Predict Price</button>
+        <button onclick="clearInputs()">Clear</button>
+
+    </div>
+
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
